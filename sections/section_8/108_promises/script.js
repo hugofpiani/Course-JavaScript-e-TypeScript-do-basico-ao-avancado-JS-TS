@@ -28,11 +28,11 @@ function esperaAi(msg, temp) {
 esperaAi('Alou?', rand(2, 7)) // Primeira Promise: espera entre 2-7 segundos
     .then(resposta => {
         console.log(resposta); // Exibe a primeira resposta
-        return esperaAi('Olá?', rand(3, 5)); 
+        return esperaAi('Olá?', rand(3, 5));
     })
     .then(resposta => {
         console.log(resposta); // Exibe a segunda resposta
-        return esperaAi(1, rand(1, 9)); 
+        return esperaAi(1, rand(1, 9));
     })
     .catch(e => {
         // Captura qualquer erro que ocorra em qualquer parte da cadeia
